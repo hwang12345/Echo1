@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #edecec;
+}
+a {
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+}
+a:active, a:visited, a:hover {
+    text-decoration: none;
+    color: rgb(0, 188, 212);
+}
+
+/*!* path plot *!*/
+/*.pathplot path {*/
+    /*stroke-width: 2px;*/
+    /*stroke: steelblue*/
+/*}*/
+/*!*.planned {stroke-dasharray:10;}*!*/
+
+/*!*@keyframes strokeanim {*!*/
+    /*!*to { stroke-dashoffset: 0; }*!*/
+/*!*}*!*/
+
+/*!*路径动画*!*/
+/*@keyframes marchingants {*/
+    /*to { stroke-dashoffset: 19; }*/
+/*}*/
+
+/*.planneds {*/
+    /*!*stroke-dasharray: 300;*!*/
+    /*!*stroke-dashoffset: 300;*!*/
+    /*!*animation: strokeanim 2s alternate infinite;*!*/
+
+    /*stroke-width: 7;*/
+    /*stroke-dasharray: 10;*/
+    /*animation: marchingants 1s forwards infinite linear;*/
+/*}*/
+
+.pathplot path {
+    fill:none;
+    stroke-width: 2px;/*线条宽度*/
+    stroke: steelblue;
+    shape-rendering:crispEdges;        /* //设置线条的样式 */
+}
+.planned{
+    stroke-dasharray: 950;             /* //设置虚线的间隔长度 */
+    stroke-dashoffset: 950;             /* 设置线段偏移长度 */
+
+    animation: dash 20s infinite;
+} /*添加动画的效果，具体想怎么动，可以修改这里面的东西*/
+
+@keyframes dash {
+    0%{
+        stroke-dashoffset: -950;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+/* path plot color*/
+#path-22-22-22-22-22-22 path{stroke: #123fff}
+#path-a0-f4-tc-1e-g4-00 path{stroke: #d27009}
+#path-5c-ac-4c-be-1c-fc path{stroke: #d30a18}
+#path-3c-2d-5f-f9-2f-d1 path{stroke: #7f821f}
+
+#demo {
+    text-align: center;
+}
+
+/* overlays */
+.polygon {stroke:white;stroke-width:2px;fill-opacity:0.2}
+.vertex {stroke:lime;stroke-width:2px;fill:none}
+
+/*#vertex-1,#vertex-11,#vertex-21,#vertex-31,#vertex-41 {
+    stroke:red;
+}
+
+#vertex-5,#vertex-15,#vertex-24,#vertex-32,#vertex-49 {
+    stroke:blue;
+}*/
+/*#vertex-7,#vertex-8,#vertex-9,#vertex-10,#vertex-12,#vertex-13,*/
+/*#vertex-14,#vertex-29,#vertex-30,#vertex-31,#vertex-32,#vertex-34,*/
+/*#vertex-36,#vertex-42,#vertex-43,#vertex-44,#vertex-45,#vertex-46,*/
+/*#vertex-47,#vertex-48,#vertex-49,#vertex-50,#vertex-51,#vertex-52,*/
+/*#vertex-53,#vertex-54,#vertex-55,#vertex-56,#vertex-72,#vertex-73,*/
+/*#vertex-74,#vertex-75,*/
+/*#vertex-78,#vertex-79,#vertex-80,#vertex-81,#vertex-82,#vertex-87,*/
+/*#vertex-88, #vertex-89,#vertex-90,#vertex-91*/
+/*{*/
+    /*stroke:#CDCDCD;*/
+/*}*/
+#vertex-72,#vertex-73,#vertex-79,#vertex-80,#vertex-81,#vertex-82,#vertex-54,#vertex-55 ,
+#vertex-56,#vertex-53,#vertex-52,#vertex-51,#vertex-91,#vertex-50,#vertex-49,#vertex-48 ,
+#vertex-47,#vertex-46,#vertex-90,#vertex-78
+{
+    stroke:#D2E8F5;
+}
+#vertex-88,#vertex-87,#vertex-8,#vertex-9,#vertex-10,#vertex-34,#vertex-32,#vertex-31 ,
+#vertex-30,#vertex-29,#vertex-44,#vertex-43,#vertex-42,#vertex-12,#vertex-13,#vertex-14 ,
+#vertex-7,#vertex-6,#vertex-45,#vertex-35,#vertex-36,#vertex-37
+{
+    stroke:#CEE5C7;
+}
+/*#CDCDCD*/
+/*#vertex-0 {*/
+    /*stroke:#00bcd4;*/
+/*}*/
+
+
+
+/*#vertex-7,#vertex-8,#vertex-9,#vertex-10,#vertex-12,#vertex-13,*/
+/*#vertex-14,#vertex-29,#vertex-30,#vertex-31,#vertex-32,#vertex-34,*/
+/*#vertex-36,#vertex-42,#vertex-43,#vertex-44,#vertex-45,#vertex-46,*/
+/*#vertex-47,#vertex-48,#vertex-49,#vertex-50,#vertex-51,#vertex-52,*/
+/*#vertex-53,#vertex-54,#vertex-55,#vertex-56,#vertex-72,#vertex-73,*/
+/*#vertex-79,#vertex-80,#vertex-81,#vertex-82,#vertex-87,#vertex-88,*/
+/*#vertex-89,#vertex-90,#vertex-91*/
+
+
+
+
+
+
+
+
+
+/*{*/
+    /*stroke:black;*/
+/*}*/
